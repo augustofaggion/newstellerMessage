@@ -1,0 +1,19 @@
+*{box-sizing: border-box;}
+
+
+
+body{
+    font-size: 16px;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+/* Colors */
+:root{
+    --primaryTomato: hsl(4, 100%, 67%);
+    --darkGrey: hsl(hsl(234, 29%, 20%));
+    --charGrey:  hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
