@@ -29,5 +29,27 @@ body{
 
 .left-side{
     margin: 10px;
+    /* padding: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+}
+
+.left-side h1 {
+    font-size: 4rem;
+}
+
+.left-side h2{
+    font-size: 1.2rem;
+    padding: 0;
+    font-weight: lighter;
+}
+
+.left-side p{
+    padding-left: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
