@@ -4,6 +4,7 @@
 
 body{
     font-size: 16px;
+    background-color:var(--charGrey)
 }
 
 /* Fonts */
@@ -17,3 +18,16 @@ body{
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
 }
+
+.container{
+    display: flex;
+    background-color: var(--white);
+    max-width: 900px;
+    margin: 0 auto;
+    max-height: 500px;
+}
+
+.left-side{
+    margin: 10px;
+}
+
