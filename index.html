@@ -9,7 +9,7 @@
 </head>
 <body>
     <main class="container">
-        <div class="left-side both__container">
+        <div class="left-side">
             <h1>Stay updated!</h1>
             <h2> Join 60,000+ product managers receiving monthly updates on:</h2>
             <!-- box for the product info -->
@@ -47,17 +47,19 @@
             </div>
                 
             <div class="form">
-                <form action="#">
-                    <label for="email">Email address <span id="error_message"></span></label>
+                <form action="#" onsubmit="return validation()">
+                    <label for="email"><strong>Email address:</strong></label><span id="error_message"></span>
+                    
                     <input type="email" name="email" id="email"  placeholder="email@company.com" required>
+                    
                     <button class="btn" type="submit" onclick="validation()">Subscribe to monthly Newsteller</button>
                 </form>
             </div>
             
         </div>
-        <!-- <div class="right-side both__container">
+        <div class="right-side">
             <img src="./img/sideImg.svg" alt="sideImg" id="side-image">
-        </div> -->
+        </div>
     </main>
     
     

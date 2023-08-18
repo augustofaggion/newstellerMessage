@@ -1,14 +1,25 @@
 function validation (){
-    let valide = true;
     const emailInput = document.getElementById("email");
+    const errorSpan = document.getElementById("error_message");
 
-    if(email.value === ""){
-        document.getElementById("error_message").innerHTML = "Valid E-mail Required";
-        emailInput.nextElementSibling.style.display = "block";
+    if(emailInput.value === ""){
+        errorSpan.textContent = "Valid E-mail Required";
+        errorSpan.style.display = "inline";
         emailInput.style.border = "1px solid red";
-        valide = false;
+        return false; // prevent form submission
+    } else if (!validateEmail(emailInput.value)){
+        errorSpan.textContent = "Invalid E-mail Format";
+        errorSpan.style.display = "inline";
+        emailInput.style.border = "1px solid red";
+        return false;
     } else {
-        emailInput.nextElementSibling.style.display = "none";
+        errorSpan.style.display = "none";
         emailInput.style.border = "1px solid black";
+        return true; // allow form submission
     }
+}
+
+function validateEmail(email){
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
 }
