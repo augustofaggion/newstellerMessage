@@ -106,3 +106,9 @@ input[type=email]{
     opacity: .7;
     cursor: pointer;
 }
+
+.right-side img {
+    width: 380px;
+    height: 480px;
+    margin: 10px;
+}
