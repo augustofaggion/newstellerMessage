@@ -1,4 +1,6 @@
-function validation (){
+function validation (event){
+    event.preventDefault(); // that prevent the html submit form
+
     const emailInput = document.getElementById("email");
     const errorSpan = document.getElementById("error_message");
 
@@ -15,7 +17,10 @@ function validation (){
     } else {
         errorSpan.style.display = "none";
         emailInput.style.border = "1px solid black";
+
+        window.location.href = "sus.html";
         return true; // allow form submission
+
     }
 }
 
@@ -23,3 +28,6 @@ function validateEmail(email){
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+
+

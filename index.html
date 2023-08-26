@@ -6,6 +6,7 @@
     <title>Newsteller</title>
     <!-- Css file -->
     <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
     <main class="container">
@@ -47,12 +48,12 @@
             </div>
                 
             <div class="form">
-                <form action="#" onsubmit="return validation()">
+                <form action="#" onsubmit="return validation(event)">
                     <label for="email"><strong>Email address:</strong></label><span id="error_message"></span>
                     
-                    <input type="email" name="email" id="email"  placeholder="email@company.com" required>
+                    <input class="in" type="email"  name="email" id="email"  placeholder="email@company.com" required>
                     
-                    <button class="btn" type="submit" onclick="validation()">Subscribe to monthly Newsteller</button>
+                    <button class="btn media" id="btn-approved" type="submit" onclick="validation()">Subscribe to monthly Newsteller</button>
                 </form>
             </div>
             

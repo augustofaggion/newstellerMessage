@@ -1,3 +1,5 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Roboto:wght@400;700&display=swap');
 *{box-sizing: border-box;}
 
 
@@ -7,8 +9,7 @@ body{
     background-color:var(--charGrey)
 }
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
 
 /* Colors */
 :root{
@@ -23,7 +24,7 @@ body{
 .container{
     display: flex;
     background-color: var(--white);
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
     max-height: 500px;
     border-radius: 10px;
@@ -111,4 +112,52 @@ input[type=email]{
     width: 380px;
     height: 480px;
     margin: 10px;
+}
+
+/* Sucess HTML CSS */
+#box-sus{
+    background-color: var(--white);
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+.box-in{
+    margin: 30px;
+}
+
+.btn-sus{
+    background-color: var(--btn);
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-sus:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+@media only screen  and (max-width: 390px){
+    .right-side img{
+        display: none;
+    }
+
+    .media{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input#email{
+        width: 100%;
+    }
+
+    .left-side{
+        margin: 20px;
+    }
 }
